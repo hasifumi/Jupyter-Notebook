@@ -1,0 +1,12 @@
+version: '3'
+services:
+  data-science:
+    restart: always
+    build: .
+    container_name: 'data-science'
+    ports:
+      - "10000:10000"
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./notebooks:/root/notebooks/
