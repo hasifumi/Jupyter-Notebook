@@ -1,7 +1,5 @@
-### Data-Science
-
-※dc = docker-compose
-### set up
+# Data-Science Set up
+※`dc` = `docker-compose`
 
 * ビルド
 ```
