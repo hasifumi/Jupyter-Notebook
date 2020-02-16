@@ -7,6 +7,8 @@ RUN pip install jupyter_contrib_nbextensions && \
     git clone https://github.com/lambdalisue/jupyter-vim-binding /home/jovyan/.local/share/jupyter/nbextensions/vim_binding && \
     jupyter nbextension enable vim_binding/vim_binding
 
+RUN pip install numpy pandas matplotlib
+
 EXPOSE 10000
 CMD ["bash"]
 #CMD ["jupyter notebook --port 10000 --allow-root"]
