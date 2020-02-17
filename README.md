@@ -1,4 +1,4 @@
-# Data-Science Set up
+# Jupyter Notebook Set up
 ※`dc` = `docker-compose`
 
 * ビルド
