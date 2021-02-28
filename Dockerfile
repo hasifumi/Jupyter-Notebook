@@ -9,6 +9,10 @@ RUN pip install jupyter_contrib_nbextensions && \
 
 RUN pip install numpy pandas matplotlib
 
+RUN mkdir -p /home/jovyan/.jupyter/custom/
+
+COPY  ./notebooks/custom.js /home/jovyan/.jupyter/custom/
+
 EXPOSE 10000
 CMD ["bash"]
 #CMD ["jupyter notebook --port 10000 --allow-root"]

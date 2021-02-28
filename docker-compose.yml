@@ -3,6 +3,7 @@ services:
   data-science:
     restart: always
     build: .
+    image: jupyter-notebook_data-science
     container_name: 'data-science'
     ports:
       - "10000:10000"
@@ -10,3 +11,7 @@ services:
     tty: true
     volumes:
       - ./notebooks:/root/notebooks/
+      - c:/users/hasif/project:/root/project/
+    command: jupyter notebook --port 10000 --allow-root
+    # command: bash
+
